@@ -1,0 +1,310 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@400..700&family=Kaushan+Script&family=Pacifico&family=Playwrite+AU+QLD:wght@100..400&family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@400..700&family=Kaushan+Script&family=Playwrite+AU+QLD:wght@100..400&family=Sofia&display=swap');
+
+
+body {
+    background-color: #eed9c6;
+    font-family: 'Arial', sans-serif;
+   
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+   
+}
+
+.navleft h1 {
+    font-size: 40px;
+    margin: 0;
+    color: black;
+    font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.navright {
+    display: flex;
+    font-family: "Playwrite AU QLD", cursive;
+  font-optical-sizing: auto;
+  
+  font-style: normal;
+}
+
+.ele {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    border-radius: 20px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.ele:hover {
+    background-color: #b5a99d;
+}
+
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    height: 450px;
+}
+
+.aboutme  {
+    font-size: 24px;
+    color: black;
+  
+  
+}
+.aboutme h1{
+    font-family: "Pacifico", cursive;
+  font-weight: 500;
+  font-style: normal;
+}
+.aboutme p{
+    
+  font-optical-sizing: auto;
+  font-size: 25px;
+  font-style: normal;
+  font-family: "Courgette", cursive;
+
+}
+
+
+.logo{
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    
+    justify-content: center;
+    margin: 50px;
+}
+.heading h1 {
+    font-size: 36px;
+    color: black;
+    margin-bottom: 20px;
+    font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+.skills{
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+
+.circle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    margin: 20px 0;
+}
+
+
+.circlelogo {
+    height: 100x;
+    width: 100px;
+    background-color:  #f08a5d;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    margin: 10px;
+   
+    
+}
+
+.circle > .circlelogo {
+    flex: 0 0 calc(33.333% - 20px); /* 33.333% width minus margin */
+    box-sizing: border-box;
+}
+
+
+@media (max-width: 768px) {
+    .circle> .circlelogo {
+        flex: 0 0 calc(50% - 20px); /* 2 items per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .circle > .circlelogo {
+        flex: 0 0 calc(100% - 20px); /* 1 item per row on very small screens */
+    }
+}
+
+
+
+
+.resume{
+    text-align: center;
+    padding: 50px;
+    animation: fadeIn 2.5s ease-in-out;
+
+}
+
+.resume h2{
+    font-size: 40px;
+    color: black;
+    margin-bottom: 20px;
+    font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+
+}
+.resume a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color :#f08a5d;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .resume a:hover {
+    background-color: #555;
+    transform: scale(1.05);
+  }
+
+.projects {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+    padding: 50px;
+}
+
+.card {
+    border: 2px solid;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+    
+    background-color: #D6C3C6;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(69, 11, 11, 0.1);
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    border-color:#eed9c6;
+    
+    
+}
+
+.card h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-align: center; 
+    font-family: "Playwrite AU QLD", cursive;
+    font-optical-sizing: auto;
+    
+    font-style: normal;
+}
+
+.card p {
+    font-size: 16px;
+    color: #333;
+    font-family: "Playwrite AU QLD", cursive;
+    font-optical-sizing: auto;
+    
+    font-style: normal;
+    text-align: center;
+
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 480px) {
+    .projects .cards-container {
+        grid-template-columns: 1fr;
+    }
+
+    .projects .card {
+        width: 100%;
+    }
+}
+
+
+
+.contact {
+    text-align: center;
+    padding: 50px;
+    background-color: antiquewhite;
+}
+
+.contact h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.details p {
+    font-size: 20px;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    margin: 5px 0;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #d1cebd;
+}
+
+footer p {
+    margin: 0;
+    font-size: 18px;
+    color: black;
+}
+
+
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .aboutme p {
+        padding-right: 0;
+    }
+
+    .logo {
+        padding-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .services, .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        max-width: 300px;
+    }
+}
+
+
+
+.resume{
+    text-align: center;
+    padding: 50px;
+    animation: fadeIn 2.5s ease-in-out;
+
+}
