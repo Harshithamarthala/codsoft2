@@ -102,6 +102,7 @@ body {
     padding-top: 20px;
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 50px;
 }
 
 
@@ -152,8 +153,9 @@ body {
 
 .resume{
     text-align: center;
-    padding: 50px;
+    padding: 100px;
     animation: fadeIn 2.5s ease-in-out;
+    background-color: #f08a5d;
 
 }
 
@@ -246,7 +248,7 @@ body {
 .contact {
     text-align: center;
     padding: 50px;
-    background-color: antiquewhite;
+   
 }
 
 .contact h1 {
